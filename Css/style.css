@@ -1,0 +1,356 @@
+/* Common Css Start's */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.aling-center{
+    align-items: center;
+}
+.heading{
+    font-size: 46px;
+    font-weight: 800;
+    color: #02918c;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}
+.heading::after{
+    content:'';
+    width: 162px;
+    height: 9px;
+    background-image: url(../image/logo.png);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icon{
+    color: #02918c;
+    font-size: 25px;
+}
+.subheading{
+    margin: 30px 0;
+    color: #7e8287;
+    font-weight: 800;
+    font-size: 16px
+}
+.cardcnt{
+    color: #7e8287;
+    font-size: 11px;
+    padding: 0 50px;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/* Common Css End's */
+nav{
+    background-color: #02918c;
+}
+nav .logo{
+width: 30%;
+}
+nav .menu{
+    width: 70%;
+}nav .menu ul{
+    text-align: right;
+}
+nav .menu ul li{
+    display: inline-block;
+}
+
+nav .menu ul li a{
+    font-weight: 800;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    padding: 26px 25px;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+nav .menu ul li a::before{
+    content: '';
+    width: 0;
+    height: 30px;
+    background-color:  rgba(255, 254, 254, 0.233);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+nav .menu ul li a::after{
+    content: '';
+    width: 0;
+    height: 30px;
+    background-color:rgba(255, 254, 254, 0.233);
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+nav .menu ul li:hover > a::after{
+    width: 100%;
+    border-bottom-left-radius: 40px;
+}
+nav .menu ul li:hover > a::before{
+    width: 100%;
+    border-top-right-radius: 40px;
+}
+
+
+
+
+/* Banner Start's  */
+#banner{
+    background-image: url(../image/banner.jpg);
+    height: 730px;
+    background-size: cover;
+    background-position: center;
+}
+#banner .row{
+    height: 730px;
+ }
+ #banner .bannercnt{
+    text-align: center;
+    color: white;
+    width: 100%;
+ }
+ #banner .bannercnt h3{
+    font-weight: 400;
+    font-size: 30px;
+ }
+ #banner .bannercnt h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+ }
+ #banner .bannercnt p{
+    font-size: 18px;
+    font-weight: 400;
+ }
+ #banner .bannercnt img{
+    margin: 48px 0;
+ }
+
+#button{
+    width: 196px;
+    height: 48px;
+    background-color: #cfc91d;
+    display: block;
+    margin: auto;
+    font-size: 14px;
+    font-weight: 800;
+    color:#0b1016;
+    text-transform: uppercase;
+    line-height: 48px;
+    border: none;
+ }
+#button:hover{
+    background-color: rgba(2, 145, 140,60);
+}
+/* Banner End's */
+
+
+
+
+
+/* About part start's */
+#about{
+    padding:98px 0;
+}
+#about .aboutText{
+    color: #7e8287;
+    width: 870px;
+    margin: 70px auto 70px auto;
+    text-align: center;
+}
+#about .aboutText span{
+    color:#7e8287;
+    font-size: 23px;
+    font-weight: 800;
+}
+#about .aboutCard{
+width: 24%;
+text-align: center;
+border-right: 1px solid #7e8287;
+padding: 30px 0;
+margin: 0 5px;
+transition: 0.3s;
+transform: scale(1);
+}
+#about .aboutCard:hover{
+    background-color: rgba(5, 80, 77, 0.2);
+    transform: scale(0.90);
+    border: none;
+}
+
+#about .aboutCard:last-child{
+    border: none;
+}
+/* About part End's */
+
+
+
+/* Service Part Start's */
+#service{
+padding: 73px 0;
+background-image: url(../image/serviceBG.png);
+background-size: cover;
+background-position: center;
+}
+#service .heading{
+    text-align: left;
+}
+#service .heading::after{
+    left: 0;
+    transform: translateX(0%);
+}
+
+.service_left{
+    width: 50%;
+}
+.serviceCard{
+    width: 49%;
+    margin-bottom: 50px;
+    margin: 2px 2px;
+    padding: 10px;
+    transition: 0.3s;
+    transform: scale(1);
+}
+.serviceCard:hover{
+    background-color: rgba(126, 130, 135,0.20);
+    transform: scale(0.90);
+}
+.serviceCard .cardcnt{
+    padding: 0;
+    padding-right: 100px;
+}
+.serviceText{
+    line-height: 50px;
+    margin: 65px;
+    margin-left: 0;
+    color: #7e8287;
+ }
+/* Service Part End's */
+
+
+
+/* Work Heading Start's  */
+#work{
+    padding: 100px;
+}
+.workText{
+    color: #7e8287;
+    width: 870px;
+    margin: 70px auto 70px auto;
+    text-align: center;
+    line-height: 30px;
+}
+/* Work Heading End's */
+
+
+
+/* Work Image Start's */
+.workCard{
+    width: 25%;
+    position: relative;
+}
+#image .workCard .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(2, 145, 139,0.60);
+    inset: 20px;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    transform: scale(0);
+    transition: 0.3s;
+}
+#image .workCard:hover .overlay{
+    transform: scale(1);
+}
+#image .workCard .overlay .overlayCnt h4{
+    padding:20px;
+}
+.overlay .row{
+    height: 100%;
+}
+.workCard img{
+    width: 100%;
+    display: block;
+}
+
+/* Work Image End's */
+
+
+/* Contact Start's */
+.contact{
+    margin: 100px 0 70px;
+}
+
+#contact_form{
+    padding: 70px 0;
+    background-color: #0a0a0b;
+}
+#contact_form .form_input{
+    width: 640px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#contact_form .form_input input{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(190, 190, 190);
+    color: rgb(105, 105, 105);
+}
+#contact_form .text_area{
+    width: 920px;
+    margin: auto;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+#contact_form .text_area textarea{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid rgb(105, 105, 105);
+    border-bottom: 1px solid white;
+    color: rgb(105, 105, 105);
+}
+#contact_form .text_area label{
+    display: block;
+    text-align: center;
+    color: rgb(105, 105, 105);
+}
+.copyright{
+    color: rgb(133, 133, 133);
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Contact End's */
